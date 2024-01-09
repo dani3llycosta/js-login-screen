@@ -1,0 +1,101 @@
+body {
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(20, 243, 224, 0.2), rgba(0, 0, 0, .6)), url(../assets/images/clouds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+}
+
+.login-screen {
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    width: 40rem;
+    color: white;
+    border: 2px solid #3d7ccf;
+    border-image: linear-gradient(279deg, rgb(66, 55, 161) 0%, rgb(255, 255, 255) 60%, rgb(23, 151, 255) 100%);
+    border-image-slice: 1;
+    background-color: transparent;
+    padding: .860rem;
+    box-shadow: inset -5px 6px 8px rgba(130, 158, 201, 0.7);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.login-screen .data {
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    height: 2rem;
+    width: 15rem;
+}
+
+.login-screen .label {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.login-screen .login-button {
+    border: 2px solid #305c9600;
+    border: #305c9600;
+    border-radius: 3rem;
+    height: 2rem;
+    width: 100%;
+    color: #fff;
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(279deg, rgba(255, 255, 255, 0.22872899159663862) 0%, rgb(34, 103, 160) 100%);
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-screen button:hover {
+    background-color: #23518d;
+}
+
+.passwordForgotten {
+    margin-top: 1.5rem;
+    width: 100%;
+    color: #b6bdc5;
+    font-weight: 200;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.passwordForgotten:hover,
+.no-account:hover {
+    color: #23518d;
+}
+
+.no-account {
+    margin-top: 0.80rem;
+    width: 100%;
+    color: #b6bdc5;
+    font-weight: 200;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.password-container {
+    position: relative;
+}
+
+#showPassword {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 800;
+}

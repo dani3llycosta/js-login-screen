@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Auth Alley</title>
+</head>
+<body>
+
+    <div class="login-screen">
+        <form action="#" method="post">
+            <label class="label">Username</label><br>
+            <input type="text" class="data" name="username" required><br><br>
+
+            <label class="label">Password</label><br>
+
+            <div class="password-container">
+                <input type="password" class="data" name="password" required>
+                <span id="showPassword" onclick="showHidePassword()">show</span>
+            </div>
+            
+            <button class="login-button" type="button" onclick="validateLogin()">Login</button><br>
+            <a href="#" class="passwordForgotten">Forgot your password?</a>
+            <a href="signup.html" class="no-account">Don't have an account? Sign up!</a>
+        </form>
+    </div>
+
+    <script src="./src/assets/scripts/main.js"></script>
+</body>
+
+</html>
